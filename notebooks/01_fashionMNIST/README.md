@@ -13,6 +13,7 @@ We will create a Neural Network with 784 Inputs (28x28 Pixels), one hidden Layer
         subgraph Network
             direction LR
             style Network fill:#f9f
+            linkStyle default interpolate basis
 
             I0 --> N0 & N1 & N98 & N99
             I1 --> N0 & N1 & N98 & N99
