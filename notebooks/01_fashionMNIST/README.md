@@ -12,7 +12,7 @@ We will create a Neural Network with 784 Inputs (28x28 Pixels), one hidden Layer
     %%{ init: { 'flowchart': { 'curve': 'linear', "defaultRenderer": "elk" } } }%%
     flowchart TD
         subgraph Network
-            direction TD
+            direction TB
             style Network fill:#f9f
             subgraph Inputs
                 direction LR
