@@ -47,11 +47,11 @@ We will create a Neural Network with 784 Inputs (28x28 Pixels), one hidden Layer
             I783 --> N1 & N2 & Nx & N99 & N100
             I784 --> N1 & N2 & Nx & N99 & N100
 
-            N1 --> O1 & O2 & Ox & O9 & 10
-            N2 --> O1 & O2 & Ox & O9 & 10
-            Nx --> O1 & O2 & Ox & O9 & 10
-            N99 --> O1 & O2 & Ox & O9 & 10
-            N100 --> O1 & O2 & Ox & O9 & 10
+            N1 --> O1 & O2 & Ox & O9 & O10
+            N2 --> O1 & O2 & Ox & O9 & O10
+            Nx --> O1 & O2 & Ox & O9 & O10
+            N99 --> O1 & O2 & Ox & O9 & O10
+            N100 --> O1 & O2 & Ox & O9 & O10
 
         end
 ```
