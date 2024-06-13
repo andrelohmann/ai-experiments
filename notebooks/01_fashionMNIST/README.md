@@ -9,12 +9,12 @@ We are training our model with a bunch of closing pictures, to be able to catego
 We will create a Neural Network with 784 Inputs (28x28 Pixels), one hidden Layer with 100 Neurons (sigmoid) and 10 outputs (one for each category).
 
 
-%%{ init: { 'flowchart': { 'curve': 'stepBefore' } } }%%
+
 flowchart LR
 
 ```mermaid
-    
-    graph LR
+    %%{ init: { 'flowchart': { 'curve': 'linear', "defaultRenderer": "elk" } } }%%
+    flowchart LR
         subgraph Network
             direction LR
             style Network fill:#f9f
