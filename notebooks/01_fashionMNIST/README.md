@@ -53,7 +53,7 @@ We will create a Neural Network with 784 Inputs (28x28 Pixels), one hidden Layer
             N99 --> O1 & O2 & Ox & O9 & O10
             N100 --> O1 & O2 & Ox & O9 & O10
 
-            classDef round padding:100px
+            classDef round height:75px
 
         end
 ```
