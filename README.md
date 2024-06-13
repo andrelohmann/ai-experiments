@@ -34,5 +34,6 @@ There is a more elegant way of using pre-commit hooks, described [here](https://
 
 ### Projects
 
-* [fashionMNIS](./notebooks/01_fashionMNIST/README.md)
+* [Neuronm explanation](./notebooks/01_neuron_explanation/README.md)
+* [fashionMNIS single output](./notebooks/02_fashionMNIST_single_output/README.md)
 * 
