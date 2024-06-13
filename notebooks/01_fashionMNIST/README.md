@@ -13,7 +13,7 @@ We will create a Neural Network with 784 Inputs (28x28 Pixels), one hidden Layer
 flowchart LR
 
 ```mermaid
-    %%{ init: { 'flowchart': { 'curve': 'cardinal' } } }%%
+    %%{ init: { 'flowchart': { 'curve': 'linear' } } }%%
     graph LR
         subgraph Network
             direction LR
