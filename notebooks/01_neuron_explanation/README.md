@@ -14,7 +14,7 @@
             end
 
             subgraph Neuron
-                direction TD
+                direction TB
                 N1([Neuron])
                 O((y))
             end
