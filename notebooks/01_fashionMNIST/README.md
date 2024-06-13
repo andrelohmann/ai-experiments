@@ -13,13 +13,13 @@ We will create a Neural Network with 784 Inputs (28x28 Pixels), one hidden Layer
 flowchart LR
 
 ```mermaid
-    %%{ init: { 'flowchart': { 'curve': 'linear' } } }%%
+    
     graph LR
         subgraph Network
             direction LR
             style Network fill:#f9f
             linkStyle default interpolate basis
-
+            %%{ init: { 'flowchart': { 'curve': 'linear' } } }%%
             I0 --> N0 & N1 & N98 & N99
             I1 --> N0 & N1 & N98 & N99
             I782 --> N0 & N1 & N98 & N99
