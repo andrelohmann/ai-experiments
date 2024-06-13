@@ -16,29 +16,29 @@ We will create a Neural Network with 784 Inputs (28x28 Pixels), one hidden Layer
             style Network fill:#f9f
             subgraph Inputs
                 direction LR
-                I1((Input   1)):::round
-                I2((Input   2)):::round
-                Ix((   ...   )):::round
-                I783((Input 783)):::round
-                I784((Input 784)):::round
+                I1((Input___1)):::round
+                I2((Input___2)):::round
+                Ix((___...___)):::round
+                I783((Input_783)):::round
+                I784((Input_784)):::round
             end
 
             subgraph HiddenLayer
                 direction LR
-                N1([Neuron   1]);
-                N2([Neuron   2]);
-                Nx([    ...   ]);
-                N99([Neuron  99]);
-                N100([Neuron 100]);
+                N1([Neuron___1]);
+                N2([Neuron___2]);
+                Nx([____...___]);
+                N99([Neuron__99]);
+                N100([Neuron_100]);
             end
 
             subgraph Outputs
                 direction LR
-                O1((Output  1)):::round
-                O2((Output  2)):::round
-                Ox((   ...   )):::round
-                O9((Output  9)):::round
-                O10((Output 10)):::round
+                O1((Output__1)):::round
+                O2((Output__2)):::round
+                Ox((___...___)):::round
+                O9((Output__9)):::round
+                O10((Output_10)):::round
             end
 
             I1 --> N1 & N2 & Nx & N99 & N100
