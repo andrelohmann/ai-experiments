@@ -58,7 +58,7 @@ We will create a first Neural Network with 784 Inputs (28x28 Pixels), one hidden
             end
 
             subgraph Output
-                direction TD
+                direction TB
                 ON([OutputNeuron])
                 O((Output))
             end
