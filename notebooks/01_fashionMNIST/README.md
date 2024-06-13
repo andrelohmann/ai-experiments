@@ -10,43 +10,49 @@ We will create a Neural Network with 784 Inputs (28x28 Pixels), one hidden Layer
 
 ```mermaid
     %%{ init: { 'flowchart': { 'curve': 'linear', "defaultRenderer": "elk" } } }%%
-    flowchart LR
+    flowchart TD
         subgraph Network
-            direction LR
+            direction TD
             style Network fill:#f9f
-            linkStyle default interpolate basis
-            %%{ init: { 'flowchart': { 'curve': 'linear' } } }%%
-            I0 --> N0 & N1 & N98 & N99
-            I1 --> N0 & N1 & N98 & N99
-            I782 --> N0 & N1 & N98 & N99
-            I783 --> N0 & N1 & N98 & N99
             subgraph Inputs
-                direction TB
-                I0((Input0));
+                direction LR
                 I1((Input1));
-                I782((Input782));
+                I2((Input2));
+                Ix((...))
                 I783((Input783));
+                I784((Input784));
             end
-            N0 --> O0 & O1 & O2 & O7 & O8 & O9
-            N1 --> O0 & O1 & O2 & O7 & O8 & O9
-            N98 --> O0 & O1 & O2 & O7 & O8 & O9
-            N99 --> O0 & O1 & O2 & O7 & O8 & O9
+
             subgraph HiddenLayer
-                direction TB
-                N0([Neuron0]);
+                direction LR
                 N1([Neuron1]);
-                N98([Neuron98]);
+                N2([Neuron2]);
+                Nx([...]);
                 N99([Neuron99]);
+                N100([Neuron100]);
             end
+
             subgraph Outputs
-                direction TB
-                O0((Output0));
+                direction LR
                 O1((Output1));
                 O2((Output2));
-                O7((Output7));
-                O8((Output8));
+                Ox((...));
                 O9((Output9));
+                O10((Output10));
             end
+
+            I1 --> N1 & N2 & Nx & N99 & N100
+            I2 --> N1 & N2 & Nx & N99 & N100
+            Ix --> N1 & N2 & Nx & N99 & N100
+            I783 --> N1 & N2 & Nx & N99 & N100
+            I784 --> N1 & N2 & Nx & N99 & N100
+
+            N1 --> O1 & O2 & Ox & O9 & 10
+            N2 --> O1 & O2 & Ox & O9 & 10
+            Nx --> O1 & O2 & Ox & O9 & 10
+            N99 --> O1 & O2 & Ox & O9 & 10
+            N100 --> O1 & O2 & Ox & O9 & 10
+
         end
 ```
 
