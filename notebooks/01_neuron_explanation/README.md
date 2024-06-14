@@ -97,13 +97,6 @@ In neural networks, where neuron outputs are used as inputs for the next layer n
 ```mermaid
     %%{ init: { 'flowchart': { 'curve': 'linear' } } }%%
     flowchart TD
-        subgraph 2 Layer Output
-            direction LR
-            X1((X = 10))
-            N1([20])
-            N2([540])
-            O2((y = 40))
-        end
         
         subgraph 1 Layer output
             direction LR
@@ -112,10 +105,18 @@ In neural networks, where neuron outputs are used as inputs for the next layer n
             O3((y = 40))
         end
 
-        X1 -- 2 --> N1
-        N1 -- 2 --> N2
-        N2 --> O2
+        subgraph 2 Layer Output
+            direction LR
+            X1((X = 10))
+            N1([20])
+            N2([40])
+            O2((y = 40))
+        end
 
-        X2 -- 4 --> N3
+        X2 -- w = 4 --> N3
         N3 --> O3
+
+        X1 -- w = 2 --> N1
+        N1 -- w = 2 --> N2
+        N2 --> O2
 ```
